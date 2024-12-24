@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        nav a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            height: calc(100vh - 120px);
+            color: white;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        #home {
+            background: url('https://azutmp.s3.us-east-1.amazonaws.com/Home.jpg') no-repeat center center fixed;
+        }
+        #articles {
+            background: url('https://azutmp.s3.us-east-1.amazonaws.com/Home_optimized.png') no-repeat center center fixed;
+        }
+        #about {
+            background: url('https://azutmp.s3.us-east-1.amazonaws.com/HEADPHONE.jpg') no-repeat center center fixed;
+        }
+        #contact {
+            background: url('https://azutmp.s3.us-east-1.amazonaws.com/TECHMAN.jpg') no-repeat center center fixed;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #fff;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to the Tech Blog | By DANIEL
+    </header>
+    <nav>
+        <a href="#home" onclick="openTab(event, 'home')">Home</a>
+        <a href="#articles" onclick="openTab(event, 'articles')">Articles</a>
+        <a href="#about" onclick="openTab(event, 'about')">About</a>
+        <a href="#contact" onclick="openTab(event, 'contact')">Contact</a>
+    </nav>
+
+    <div id="home" class="tab-content active">
+        <h2>Latest in Technology</h2>
+        <p>Stay updated with the latest trends in tech, from AI to blockchain!</p>
+    </div>
+
+    <div id="articles" class="tab-content">
+        <h2>Tech Articles</h2>
+        <ul>
+            <li><strong>The Rise of AI:</strong> Exploring the future of artificial intelligence.</li>
+            <li><strong>Blockchain Basics:</strong> How decentralized technology is shaping the world.</li>
+            <li><strong>Cloud Computing:</strong> Why the cloud is the backbone of modern IT.</li>
+        </ul>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h2>About Us</h2>
+        <p>We are passionate tech enthusiasts who love sharing knowledge and insights about the latest in technology.</p>
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contact Us</h2>
+        <p>Email: contact@techblog.com</p>
+        <p>Follow us on social media: Twitter, Facebook, LinkedIn.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Tech Blog. All rights reserved.
+    </footer>
+
+    <script>
+        function openTab(event, tabId) {
+            // Hide all tab content
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Show the selected tab content
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
