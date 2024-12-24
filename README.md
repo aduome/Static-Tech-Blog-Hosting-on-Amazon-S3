@@ -27,13 +27,13 @@ Follow these steps to set up and host the static website on Amazon S3.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/static-tech-blog.git
-cd static-tech-blog
+git clone https://github.com/aduome/Static-Tech-Blog-Hosting-on-Amazon-S3/
 ```
 
 ### 2. Modify the Content
 
 - Open the `index.html` file in your favorite code editor.
+- Get the file here => [index.html](https://github.com/aduome/Static-Tech-Blog-Hosting-on-Amazon-S3/blob/main/index.html/)
 - Replace the placeholder text, images, and links with your own content.
 
 ### 3. Upload Files to S3
@@ -86,14 +86,13 @@ cd static-tech-blog
 ## Screenshots
 
 ### Home Page
-![Home Page](https://via.placeholder.com/1200x800?text=Home+Page)
+![Home Page](https://github.com/aduome/Static-Tech-Blog-Hosting-on-Amazon-S3/blob/main/Screenshorts/HOME.png)
 
 ### Articles Page
-![Articles Page](https://via.placeholder.com/1200x800?text=Articles+Page)
+![Articles Page](https://github.com/aduome/Static-Tech-Blog-Hosting-on-Amazon-S3/blob/main/Screenshorts/ARTICLES.png)
 
 ### About Page
-![About Page](https://via.placeholder.com/1200x800?text=About+Page)
-
+![About Page](https://github.com/aduome/Static-Tech-Blog-Hosting-on-Amazon-S3/blob/main/Screenshorts/ABOUT.png)
 ## Deployment Notes
 
 - To update the site, modify your files locally and re-upload them to the S3 bucket.
@@ -109,7 +108,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-- Background images from [Unsplash](https://unsplash.com/).
+- Background images from [Pixabay](https://pixabay.com/photos/).
 - Icons from [FontAwesome](https://fontawesome.com/).
 
 ---
